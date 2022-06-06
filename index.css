@@ -145,6 +145,9 @@
     font-weight: 700;
     padding: 14px 37px;
 }
+.service-section{
+    background-color: #d3d3d3;
+}
 .services-list p, .services-list a{
     text-decoration: none;
     color: #707070;
