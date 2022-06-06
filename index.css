@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+   
+}
+.logo{
+    padding-top: 16px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-button{
+    color: #fff;
+    height: 35px;
+    text-decoration: none;
+    padding: 4px 20px;
+    margin-bottom: 3px;
+    background-color: #319b72;
+    border-radius: 4px;
+    border: 2px solid #319b72;
+    font-weight: 600; 
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a, .menu li a:hover{
+    text-decoration: none;
+    padding-right: 40px;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main{
+    padding-top: 30px;
+    background-image: linear-gradient(to right, #103023, #287d5c);
+    color: #fff;
+    line-height: 30px;
+   
+}
+.main h1{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.main h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.main p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.main a, .main a:hover{
+    display: inline-block;
+    color: #fff;
+    height: 40px;
+    text-decoration: none;
+    padding: 4px 20px;
+    margin-top: 10px;
+    background-color: #319b72;
+    border-radius: 4px;
+    border: 2px solid #319b72;
+}
+.about-us-section h1, p{
+    font-weight: 500;
+}
+.about-us-section p{
+    color:#707070;
+}
+.about-us-section strong{
+    font-weight: 300;
+    color:#319b72;
+}
+.items li{
+    color:#707070;
+    padding: 5px 0;
+    list-style: none; 
+}
+.about-us-link a{
+    display: inline-block;
+    color: #319b72;
+    height: 45px;
+    width: 140px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 20px 20px 30px;
+    margin: 5px 0 15px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #319b72;
+}
+.subsection{
+    background-image: url(/images/cta-bg.jpg);
+    background-repeat: no-repeat center;
+    background-size: cover;
+    height: 50%;
+    padding: 70px 0px;
+}
+.subsection h2, .subsection p{
+    color: #fff;
+}
+.subsection h2{
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.subsection p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.form-section{
+    text-align: center;
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 15px;
+    height: 52px;
+    line-height: 23px;
+}
+.submit-button{
+    border: #319b72;
+    font-size: 14px;
+    background-color: #319b72; 
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 14px 37px;
+}
+.services-list p, .services-list a{
+    text-decoration: none;
+    color: #707070;
+    
+}
+
+
+.portfolio-container a{
+    text-decoration: none;
+    color:#707070;
+}
+.portfolio-item{
+    background-image: url(/images/Bade-e-Saba-Winter-Vol.1-AWT203P38A-200x224.png);
+    background-repeat: no-repeat center;
+    background-size: cover;
+}
+.testimonial-section{
+    background-image: url(/images/whatsapp-theme.webp);
+    background-repeat: no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding: 55px 0;
+    color: #fff;
+    text-align: left;
+}
+.testimonial-section h2{
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+.testimonial-section p{
+    text-align: justify;
+}
