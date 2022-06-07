@@ -10,8 +10,36 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class=" header-contact-bar">    
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-7 d-none d-md-block d-lg-block">
+                        <div class="header-contact">
+                            <ul class="contact-item">
+                                <li class="contact-item"><span class="fas fa-phone-alt"></span>  Call Us Today! Pakistan: +92 341 7646566 | emeralddigitals@gmail.com </li>
+                            </ul>
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-lg-4">
+                        <div class="">
+                            <ul class="contact-link text-md-right text-lg-right text-left">
+                                <li class="list-inline-item">
+                                    <a href="facebook.com" class=""><span class="fab fa-facebook"></span></a>
+                               </li>
+                               <li class="list-inline-item">
+                                   <a href="linkedin.com" class=""><span class="fab fa-linkedin-in"></span></a>
+                               </li>
+                               <li class="list-inline-item">
+                                   <a href="instagram.com"class=""><span class="fab fa-instagram"></span></a>
+                               </li>
+                            </ul>
+                       </div>
+                   </div>
+               </div>
+          </div>
+        </header>    
         <!-----menu-navigation-->
-        <div class="header">
+        <header class="menu-bar">
             <div class="logo">
                <a href="#">
                   <img src="./images/website.logo.png" alt="emaralddigitals">
@@ -20,6 +48,7 @@
            <div class="navigation">
                <input type="checkbox" class="toggle-menu">
                <div class="hamburger"></div>
+               
                <ul class="menu">
                    <li><a href="index.html">Home</a></li>
                    <li><a href="about.html">About Us</a></li>
@@ -37,7 +66,7 @@
 
                </ul>
            </div>
-       </div> 
+        </header> 
         <!------Navigation-end-->
         <!---------header-content-->
        <header class="main">
@@ -148,7 +177,7 @@
                    </div>
                    <div class="col-lg-4 col-md-6 col-sm-6">
                        <div class="services-list text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm bg-white rounded">
-                            <h5> E-Commerce Management </h5>
+                            <h5 class=""> E-Commerce Management </h5>
                             <p > Make your presence online to empower business "outside the box" thinking with resource-leveling partnerships to generate sales. </p>
                             <a href="" class="mt-4">Read more</a>
                        </div>
@@ -180,7 +209,7 @@
            
         
         <!-----portfolio-section-->
-       <section class="our-portfolio-section ptb-100">
+       <section class="portfolio-section">
            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -194,17 +223,19 @@
                <div class="row">
                    <div class="col-md-12">
                         <div class="text-center pb-2">
-                            <button type="button">All</button>
-                            <button type="button">E-Commerce Management</button>
-                            <button type="button">Digital/Social Media Marketing</button>
-                            <button type="button">Logos</button>
-                            <button type="button">Branding</button>
-                            <button type="button">UI/UX Design</button>
-                            <button type="button">Mobile App and Web Development</button>
+                            <div class="portfolio-link">
+                               <a href="#">All</a>
+                               <a href="#">E-Commerce Management</a>
+                               <a href="#">Digital/Social Media Marketing</a>
+                               <a href="#">Logos</a>
+                               <a href="#">Branding</a>
+                               <a href="#">UI/UX Design</a>
+                              <a href="#">Mobile App and Web Development</a>
+                           </div>  
                        </div>
                 </div>
                 <div class="row">    
-                    <div class="text-center portfolio-container">
+                    <div class="portfolio-container">
                         <div class="portfolio-item">
                             <a href="http://nadeems.com.pk"> Nadeem's</a>
                         </div>    
@@ -243,14 +274,16 @@
             <div class="container">
                 <div class="row justify-content-around align-items-center">
                     <div class="col-md-7">
-                        <div class=>
+                        <div class="content">
                             <h3>360 Digital Solution For Your Business</h3>
                             <p>Emerald Digitals is a Web Development and Digital Marketing Company with Proven Results.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="text-align-left-sm text-align-right-lg"></div>
-                            <a href="contact.html">Contact With Us</a>
+                        <div class="text-align-left-sm text-align-right-lg">
+                            <div class="content-link">
+                               <a href="contact.html">Contact With Us</a>
+                           </div>    
                         </div>
                     </div>
                 </div>
@@ -262,13 +295,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-9">
-                       <div>
-                           <div class="col-md-4 col-sm-6">
+                       <div class="row ">
+                           <div class="col-md-4 col-sm-6 col-4">
                                <div class="footer-nav">
                                     <img src="/images/website.logo.png" alt="logo">
                                     <p>Emerald Digitals : lets be digital follow us on Social Media</p>
                                     <div class="social-nav">
-                                       <ul class="social-item">
+                                       <ul class="social-item list-unstyled text-decoration-none">
                                           <li class="social-link">
                                              <a href="facebook.html"></a>
                                              <div>Facebook</div>
@@ -285,11 +318,11 @@
                                   </div>
                                </div>
                            </div>
-                           <div class="col-md-4 col-sm-6">
+                           <div class="col-md-4 col-sm-6 col-lg-4">
                                <div>
                                    <h4>COMPANY</h4>
-                                   <ul class="company-item">
-                                       <li>
+                                   <ul class="company-item list-unstyled">
+                                        <li>
                                           <a class="nav-link" href="about.html">About Us</a>
                                        </li>
                                        <li>
@@ -301,10 +334,10 @@
                                    </ul>
                                </div>
                           </div>
-                          <div class="col-md-4 col-sm-6">
+                          <div class="col-md-4 col-sm-6 col-lg-4">
                                <div>
                                    <h4>SERVICES</h4>
-                                   <ul class="services-item">
+                                   <ul class="services-item  list-unstyled">
                                        <li>
                                           <a href="digital-marketing.">Digital Marketing</a>
                                        </li>
@@ -333,11 +366,10 @@
                                 <div class="col-12">
                                     <div class="footer-contact-nav">
                                         <h4>GET IN TOUCH</h4>
-                                        <ul class="get-in-touch-list">
-                                            <li class="d-flex align-items-center"> G10 Markaz Islamabad</li>
-                                            <li class="d-flex align-items-center">emeralddigitals@gmail.com</li>
-                                            <li class="d-flex align-items-center">+92 341 7646566</li>
-                                            <li>(123) 456-7890 - (123) 456-7890</li>
+                                        <ul class="get-in-touch-list list-unstyled">
+                                            <li> G10 Markaz Islamabad</li>
+                                            <li>emeralddigitals@gmail.com</li>
+                                            <li>+92 341 7646566</li>
                                         </ul>
                                         
                                     </div>

@@ -4,7 +4,24 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.header{
+.header-contact-bar{
+    display: block;
+    background-color: #0d261c;
+    line-height: 27px;
+    padding-top: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-right: 4px;
+}
+.header-contact-bar li{
+    list-style: none;
+    display: inline-block;
+    line-height: 13px;
+    padding-top: 8px;
+}
+.menu-bar{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -46,7 +63,62 @@
     font-size: 14px;
     font-weight: 600;
 }
+.hamburger{
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+.hamburger::before,
+.hamburger::after{
+    background: #000;
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.hamburger::before{
+    top: -7px;
+    width: 20px;
+}
+.hamburger::after{
+    top: 7px;
+    width: 20px;
 
+}
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.hamburger,.toggle-menu{
+    display: none;
+}
+.navigation input:checked ~ .hamburger{
+    background: #000;
+    width: 20px;
+}
+.navigation input:checked ~ .hamburger::before{
+    background-color: #000; 
+    width: 20px;
+}
+.navigation input:checked ~ .hamburger::after{
+    background-color: #000;
+    width: 20px;
+
+}
+.navigation input:checked ~ .menu{
+    right: 0;
+}
 .main{
     padding-top: 30px;
     background-image: linear-gradient(to right, #103023, #287d5c);
@@ -146,14 +218,44 @@
     padding: 14px 37px;
 }
 .service-section{
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 .services-list p, .services-list a{
     text-decoration: none;
     color: #707070;
     
 }
-
+.porfolio-section{
+    padding-top: 55px;
+    line-height: 27px;
+}
+.section-heading{
+    margin-top: 50px;
+}
+.section-heading strong{
+    color: #319b72;
+    font-weight: 600;
+}
+.section-heading h2{
+    margin-top: 5px;
+    font-size: 37px;
+    font-size: 600;
+}
+.section-heading p{
+    font-size: 19px;
+    color: #707070;
+    line-height: 33px;
+}
+.portfolio-link a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.521);
+}
+.portfolio-link a:hover{
+    color: #319b72;
+    text-decoration: #000 underline 2px;
+}
 
 .portfolio-container a{
     text-decoration: none;
@@ -181,4 +283,143 @@
 }
 .testimonial-section p{
     text-align: justify;
+}
+.digital-solution{
+    background-color: #f6f6f6;
+    
+}
+.content h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 29px;
+    font-weight: 600;
+}
+.content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+    margin-bottom: 70px;
+}
+.content-link a{
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+    width: 170px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 9px 30px;
+    margin-top: 10px;
+    background-color: #319b72;
+    border-radius: 4px;
+    border: 4px solid #319b72;
+}
+
+.footer-section{
+    background-image: linear-gradient(to right, #0d261c, #2d8f69);   
+    width: 100%;
+    color: #fff;
+}
+.footer-section h4{
+    font-size: 13px;
+    margin-bottom: 21px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.footer-nav img{
+    margin-bottom: 8px;
+}
+.footer-bottom{
+    background-color: #f6f6f6;
+    color: #707070;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+}
+.services-item a{
+    color: #707070;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+.services-item a:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+.company-item a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 3px 0;
+    font-weight: 400;
+}
+.company-item a:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+.get-in-touch-list{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+}
+@media screen and (max-width:895px){
+    .hamburger,.toggle-menu{
+        display: block;
+    }
+    .header{
+        padding: 10px 20px;
+        top: -20px;
+    }
+    .logo a img{
+        position: relative;
+        z-index: 2;
+        margin-left: -25px;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 100%;
+        background: white;
+        width: 100%;
+        padding-top: 82px;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a{
+        background-clip: content-box;
+        margin: 0px;
+        line-height: 30px;
+        position: relative;
+        top: -30px;
+        color: black;
+        padding: 12px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .menu li a:hover{
+        background-color: #0d261c;
+
+    }
+    .nav-button{
+        color: #fff;
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 40px;
+        position: relative;  
+        border: 2px solid #319b72;
+    }
+   
+    .content{
+        position: relative;
+        width: 100%;
+    }
+   
 }
