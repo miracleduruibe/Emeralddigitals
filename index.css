@@ -1,4 +1,4 @@
-*{
+x*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 .header-contact-bar{
     display: block;
-    background-color: #0d261c;
+    background-color: #68221f;
     line-height: 27px;
     padding-top: 8px;
     color: white;
@@ -26,11 +26,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 100px;
+    padding: 5px 110px;
    
 }
 .logo{
-    padding-top: 16px;
+    padding-top: 1px;
 }
 .navigation{
     display: flex;
@@ -43,15 +43,16 @@
     text-decoration: none;
     padding: 4px 20px;
     margin-bottom: 3px;
-    background-color: #319b72;
+    background-color: #68221f;
     border-radius: 4px;
-    border: 2px solid #319b72;
+    border: 2px solid #68221f;
     font-weight: 600; 
 }
 .menu{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 .menu li{
     list-style: none;
@@ -62,6 +63,8 @@
     color: #707070;
     font-size: 14px;
     font-weight: 600;
+    line-height: 26px;
+
 }
 .hamburger{
     position: relative;
@@ -121,10 +124,9 @@
 }
 .main{
     padding-top: 30px;
-    background-image: linear-gradient(to right, #103023, #287d5c);
+    background-image: linear-gradient(to right, #68221f, #b3625f);
     color: #fff;
     line-height: 30px;
-   
 }
 .main h1{
     font-size: 40px;
@@ -132,33 +134,38 @@
     font-weight: 700;
 }
 .main h4{
-    font-size: 18px;
+    font-size: 18x;
     font-weight: 600;
 }
 .main p{
-    font-size: 18px;
+    line-height: 30px;
+    font-size: 20px;
     font-weight: 400;
 }
-.main a, .main a:hover{
-    display: inline-block;
-    color: #fff;
-    height: 40px;
-    text-decoration: none;
-    padding: 4px 20px;
+.main-btn{
+    height: 45px;
+    width: 125px;
+    padding: 2px 20px 4px 25px;
     margin-top: 10px;
-    background-color: #319b72;
+    background-color: #707070;
     border-radius: 4px;
-    border: 2px solid #319b72;
+    border: 2px solid #707070;
 }
-.about-us-section h1, p{
-    font-weight: 500;
+.main-btn a, .main-btn a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.about-us-section h1{
+    font-weight: 600;
+    line-height: 40px;
 }
 .about-us-section p{
     color:#707070;
+    margin-top: 30px;
 }
 .about-us-section strong{
-    font-weight: 300;
-    color:#319b72;
+    font-weight: 600;
+    color: #68221f;
 }
 .items li{
     color:#707070;
@@ -167,7 +174,7 @@
 }
 .about-us-link a{
     display: inline-block;
-    color: #319b72;
+    color: #68221f;
     height: 45px;
     width: 140px;
     text-decoration: none;
@@ -177,19 +184,19 @@
     margin: 5px 0 15px 0;
     background-color: #fff;
     border-radius: 4px;
-    border: 1px solid #319b72;
+    border: 2px solid #68221f;
 }
 .subsection{
     background-image: url(/images/cta-bg.jpg);
-    background-repeat: no-repeat center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 50%;
-    padding: 70px 0px;
+    padding-top: 50px;
 }
 .subsection h2, .subsection p{
     color: #fff;
 }
 .subsection h2{
+    padding-top: 50px;
     margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
@@ -199,23 +206,38 @@
     font-size: 20px;
     font-weight: 300;
 }
-.form-section{
-    text-align: center;
+.form-section input[type=url], .form-section input[type=email]{
     padding: 15px 30px;
-    width: 100%;
     border-radius: 50px;
+}
+
+.form-input{
+    margin-bottom: 5px;
+    color: #495057;
+    width: 100%;
     font-size: 15px;
     height: 52px;
     line-height: 23px;
+    font-weight: 400;
 }
 .submit-button{
-    border: #319b72;
+    height: 60px;
+    width: 200px;
+    border: #68221f;
     font-size: 14px;
-    background-color: #319b72; 
+    background-color: #68221f; 
     color: #fff;
     border-radius: 50px;
     font-weight: 700;
     padding: 14px 37px;
+    margin-top: 10px;
+}
+.submit-button:hover{
+    opacity: 0.8;
+}
+.cta-image img{
+    position: relative;
+    top: -200px;
 }
 .service-section{
     background-color: #f6f6f6;
@@ -233,7 +255,7 @@
     margin-top: 50px;
 }
 .section-heading strong{
-    color: #319b72;
+    color: #68221f;
     font-weight: 600;
 }
 .section-heading h2{
@@ -253,7 +275,7 @@
     color: rgba(0, 0, 0, 0.521);
 }
 .portfolio-link a:hover{
-    color: #319b72;
+    color: #68221f;
     text-decoration: #000 underline 2px;
 }
 
@@ -266,6 +288,18 @@
     background-repeat: no-repeat center;
     background-size: cover;
 }
+.portfolio-link-btn{
+    color:  #fff;
+    height: 45px;
+    width: 125px;
+    text-decoration: none;
+    padding: 6px 25px 2px 25px;
+    margin: 40px 0;
+    background-color: #68221f;
+    border-radius: 4px;
+    border: 2px solid #68221f;
+}
+
 .testimonial-section{
     background-image: url(/images/whatsapp-theme.webp);
     background-repeat: no-repeat center;
@@ -284,6 +318,10 @@
 .testimonial-section p{
     text-align: justify;
 }
+.testimonial-subsection p{
+    font-size: 15px;
+    font-weight: 400;
+}
 .digital-solution{
     background-color: #f6f6f6;
     
@@ -300,7 +338,7 @@
     color: #707070;
     margin-bottom: 70px;
 }
-.content-link a{
+.content-link a, .content-link a:hover{
     display: inline-block;
     color: #fff;
     font-size: 13px;
@@ -311,17 +349,17 @@
     text-decoration: none;
     padding: 9px 30px;
     margin-top: 10px;
-    background-color: #319b72;
+    background-color: #68221f;
     border-radius: 4px;
-    border: 4px solid #319b72;
+    border: 4px solid #68221f;
 }
 
-.footer-section{
-    background-image: linear-gradient(to right, #0d261c, #2d8f69);   
+.footer-top{
+    background-image: linear-gradient(to right, #68221f, #a35a57);   
     width: 100%;
     color: #fff;
 }
-.footer-section h4{
+.footer-top h4{
     font-size: 13px;
     margin-bottom: 21px;
     line-height: 16px;
@@ -365,18 +403,21 @@
     font-weight: 400;
     line-height: 27px;
 }
-@media screen and (max-width:895px){
+@media screen and (max-width: 992px){
     .hamburger,.toggle-menu{
         display: block;
     }
-    .header{
+    .menu-bar{
+        position: relative;
         padding: 10px 20px;
-        top: -20px;
+        bottom: 39px;
+        
     }
     .logo a img{
         position: relative;
         z-index: 2;
         margin-left: -25px;
+        padding-left: 50px;
     }
     .menu{
         justify-content: start;
@@ -392,7 +433,7 @@
     .menu li{
         width: 100%;
     }
-    .menu li a{
+    /*.menu li a{
         background-clip: content-box;
         margin: 0px;
         line-height: 30px;
@@ -414,12 +455,37 @@
         width: 95%;
         height: 40px;
         position: relative;  
-        border: 2px solid #319b72;
+        border: 2px solid #68221f;
+    }*
+    .subsection{
+        padding-top: 50px;
     }
-   
+    .subsection h2{
+        padding: 1px;
+        margin-bottom: 16px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+    .form-input{
+        margin-bottom: 5px;
+        width: 100%;
+        height: 52px;
+        line-height: 23px;
+    }
+    .submit-button{
+        height: 55px;
+        width: 170px;
+    }
+    .cta-image img{
+        position: relative;
+        top: -200px;
+    }
     .content{
         position: relative;
         width: 100%;
     }
-   
+    .services-section{
+       padding-top: 55px;
+    }
 }
