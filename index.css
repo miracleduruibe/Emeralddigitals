@@ -1,9 +1,17 @@
-x*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
 .header-contact-bar{
     display: block;
     background-color: #68221f;
@@ -14,6 +22,7 @@ x*{
     font-weight: 500;
     line-height: 15px;
     margin-right: 4px;
+    z-index: 2;
 }
 .header-contact-bar li{
     list-style: none;
@@ -27,6 +36,8 @@ x*{
     justify-content: space-between;
     align-items: center;
     padding: 5px 110px;
+    position: sticky;
+    top: 0;
    
 }
 .logo{
@@ -106,6 +117,7 @@ x*{
 .hamburger,.toggle-menu{
     display: none;
 }
+
 .navigation input:checked ~ .hamburger{
     background: #000;
     width: 20px;
@@ -404,11 +416,16 @@ x*{
     line-height: 27px;
 }
 @media screen and (max-width: 992px){
+    .header-contact-bar{
+        position: relative;
+        z-index: 2;
+    }
     .hamburger,.toggle-menu{
         display: block;
     }
     .menu-bar{
-        position: relative;
+        position: sticky;
+        top: 0;
         padding: 10px 20px;
         bottom: 39px;
         
@@ -416,8 +433,7 @@ x*{
     .logo a img{
         position: relative;
         z-index: 2;
-        margin-left: -25px;
-        padding-left: 50px;
+    
     }
     .menu{
         justify-content: start;
@@ -428,35 +444,37 @@ x*{
         right: 100%;
         background: white;
         width: 100%;
-        padding-top: 82px;
+        padding-top: 130px;
+        line-height: 50px;
     }
     .menu li{
         width: 100%;
     }
-    /*.menu li a{
-        background-clip: content-box;
+    .menu li a{
         margin: 0px;
         line-height: 30px;
         position: relative;
         top: -30px;
         color: black;
         padding: 12px;
+        padding-left: 3px;
         font-size: 17px;
         font-weight: 600;
     }
     .menu li a:hover{
-        background-color: #0d261c;
+        color: red;
 
     }
     .nav-button{
         color: #fff;
         display: block;
-        margin: auto;
-        width: 95%;
+        margin: 0;
+        width: 90%;
         height: 40px;
-        position: relative;  
+        position: relative;
+        top: 90%;    
         border: 2px solid #68221f;
-    }*
+    }
     .subsection{
         padding-top: 50px;
     }
@@ -480,6 +498,9 @@ x*{
     .cta-image img{
         position: relative;
         top: -200px;
+    }
+    .submit-button{
+        margin-bottom: 10px;
     }
     .content{
         position: relative;
