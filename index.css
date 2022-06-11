@@ -199,10 +199,8 @@ html{
     border: 2px solid #68221f;
 }
 .subsection{
-    background-image: url(/images/cta-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50px;
+    background-color: #68221f;
+    padding: 60px 0;
 }
 .subsection h2, .subsection p{
     color: #fff;
@@ -226,7 +224,7 @@ html{
 .form-input{
     margin-bottom: 5px;
     color: #495057;
-    width: 100%;
+    width: 70%;
     font-size: 15px;
     height: 52px;
     line-height: 23px;
@@ -235,9 +233,9 @@ html{
 .submit-button{
     height: 60px;
     width: 200px;
-    border: #68221f;
+    border: #707070;
     font-size: 14px;
-    background-color: #68221f; 
+    background-color: #707070; 
     color: #fff;
     border-radius: 50px;
     font-weight: 700;
@@ -290,15 +288,9 @@ html{
     color: #68221f;
     text-decoration: #000 underline 2px;
 }
-
 .portfolio-container a{
     text-decoration: none;
     color:#707070;
-}
-.portfolio-item{
-    background-image: url(/images/Bade-e-Saba-Winter-Vol.1-AWT203P38A-200x224.png);
-    background-repeat: no-repeat center;
-    background-size: cover;
 }
 .portfolio-link-btn{
     color:  #fff;
@@ -310,16 +302,6 @@ html{
     background-color: #68221f;
     border-radius: 4px;
     border: 2px solid #68221f;
-}
-
-.testimonial-section{
-    background-image: url(/images/whatsapp-theme.webp);
-    background-repeat: no-repeat center;
-    background-size: cover;
-    width: 100%;
-    padding: 55px 0;
-    color: #fff;
-    text-align: left;
 }
 .testimonial-section h2{
     font-size: 37px;
@@ -498,6 +480,9 @@ html{
     .cta-image img{
         position: relative;
         top: -200px;
+    }
+    .gif-image{
+        width: 80%;
     }
     .submit-button{
         margin-bottom: 10px;
